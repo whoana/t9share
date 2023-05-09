@@ -1,0 +1,66 @@
+
+14:21:14.938 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:1, fsc:0, type:RCVR
+14:21:14.946 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:2, fsc:0, type:RCVR
+14:21:15.002 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:3, fsc:0, type:RCVR
+14:21:15.433 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:3, fsc:0
+14:21:15.448 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:3, fsc:0
+14:21:15.457 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:3, fsc:0
+14:21:15.513 [botLoader2] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:3, fsc:0
+14:21:37.022 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:4, fsc:0, type:RCVR
+14:21:37.402 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:4, fsc:0
+14:21:37.478 [botLoader2] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:4, fsc:0
+14:22:20.616 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:5, fsc:0, type:RCVR
+14:22:20.986 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:5, fsc:0
+14:22:21.135 [botLoader2] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:5, fsc:0
+14:22:27.459 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:6, fsc:0, type:RCVR
+14:22:27.474 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:6, fsc:0
+14:22:27.499 [botLoader2] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:6, fsc:0
+14:22:36.494 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:00, fnc:6, fsc:1, type:SNDR <!--- tnc < fnc 이시점에 이미 완료된 인지되어 finisher 가 finCache 에서 삭제처리함 
+14:22:36.860 [botLoader2] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:00, fnc:6, fsc:1
+14:22:37.085 [botLoader2] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:00, fnc:6, fsc:1
+14:24:29.834 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:1, fsc:0, type:RCVR <---- 이시점에 finisher 에 이의 cache가 삭제되어 갯수 정보 fnc, fsc 가 제대로 수정되지 못함 .
+14:24:29.923 [botLoader0] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:1, fsc:0
+14:24:30.033 [botLoader0] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:1, fsc:0
+14:26:01.597 [loader1]    INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:2, fsc:0, type:RCVR
+14:26:01.601 [botLoader0] INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:2, fsc:0
+14:26:01.720 [botLoader0] INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221130174948564948@HOST_SEND:status:01, fnc:2, fsc:0
+
+
+----------------------------------------------------------------
+14:21:14.922 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:1, fsc:0, type:RCVR
+14:21:14.926 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:1, fsc:1, type:SNDR
+14:21:15.002 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:2, fsc:1, type:RCVR
+14:21:15.428 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:2, fsc:1
+14:21:15.444 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:2, fsc:1
+14:21:15.452 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:2, fsc:1
+14:21:15.489 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:00, fnc:2, fsc:1  <---- 완료건으로 업데이트 완료 , 이미 삭제대상 
+14:21:30.730 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:1, fsc:0, type:RCVR
+14:21:31.298 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:1, fsc:0
+14:21:31.491 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:1, fsc:0
+14:21:59.092 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:2, fsc:0, type:RCVR
+14:21:59.443 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:2, fsc:0
+14:21:59.474 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:2, fsc:0
+14:23:02.475 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:3, fsc:0, type:RCVR
+14:23:03.098 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:3, fsc:0
+14:23:03.148 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:3, fsc:0
+14:23:06.137 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:4, fsc:0, type:RCVR
+14:23:06.310 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:4, fsc:0
+14:23:06.356 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:4, fsc:0
+14:24:40.610 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:5, fsc:0, type:RCVR
+14:24:40.997 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:5, fsc:0
+14:24:41.010 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:5, fsc:0
+14:26:01.149 [loader1]      INFO  r.m.t.l.RouteHandler.handleState - rh:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:6, fsc:0, type:RCVR
+14:26:01.288 [botLoader2]   INFO  r.m.t.l.BotLoader.runGracefully  - bl:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:6, fsc:0
+14:26:01.468 [botLoader2]   INFO  r.m.t.d.s.BotService.mergeBots   - db:BATCH_999@20221108122344179654@HOST_SEND:status:01, fnc:6, fsc:0 <---- 수신 6 , 송신 1로 최종 업데이트 됨 . 
+
+[진단]
+* tdc : toDoNodeCount(rfh2 헤더 recevSpokeCount) 값 이 현재 1로 온다. 따라서 수신이 한개 이상이고 송신이 완료된 시점에 state 는 완료상태가 되어 캐시에서 삭제대상이 되어 
+        수신 건수 및 송신 건수 표기가 초기화 및 디비에 업데이트 되는 문제가 발생됨 .
+        로그가 잘못 발생되는 문제이므로 무시해도 됨.
+
+
+
+
+
+
+
